@@ -1,0 +1,69 @@
+  
+    
+    // font-family: 'Novecento Sans Web Normal';
+    /* text-align: justify; */
+    
+   
+    .footer{
+        background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/dark-wood.png");
+        background-repeat: repeat;
+        height: 350px;
+        margin-top: 50px;
+        .footer-content{
+
+            background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/logos/inhabitent-logo-text.svg");
+           
+            background-position-x: 1000px;
+            background-position-y: 60px;
+            background-size: 280px;
+            // background-position: right;
+            background-repeat: no-repeat;
+            height: 300px;
+
+            .contact-info{
+            color: white;
+            margin-left: 160px;
+            margin-bottom: 20px;
+            p{
+                font-size: 16px;
+                color: white;
+                margin-left: -300px;
+                margin-top: -20px;
+                }
+            li{
+            margin-bottom: 20px;
+            }
+            }
+            .social-media{
+            color: white;
+            margin-left: 160px;
+
+            ul{
+            list-style-type: none;
+            }
+            li{
+            float: left;
+            margin-right: 15px;
+            
+            }
+            }
+            h2{
+            padding-top: 60px;
+            margin-left: 160px;
+            color: #d99054;
+            font-size: 20px;
+            text-align: left;
+           }
+
+        }
+        .copyright{
+            p{
+                color: white;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Novecento Sans Web Normal';
+   }
+        }
+        
+    }
+    

@@ -1,0 +1,42 @@
+.about-hero{
+    background:linear-gradient(
+            rgba(0,0,0,0.25) 0%,
+            rgba(0,0,0,0.25) 100%
+        ), 
+        url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/about-hero-min.jpg") center center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 710px;
+    width: auto;
+    h2{
+        color: white;
+        text-align: center;
+        // display: inline;
+        position: relative;
+        font-size: 48px;
+        top: calc(40% - 15px);
+        
+    }
+}
+h2 {
+    color: #2f1339;
+    text-align: center;
+    font-size: 33px;
+    text-transform: uppercase; 
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Novecento Sans Web Bold';
+    letter-spacing: 2px;
+  }
+  p {
+    padding-left: 320px;
+    padding-right: 320px;
+    color:#808080;
+    font-family: 'Merriweather Web Normal';
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  p + p {
+    margin-top: 30px;
+}
