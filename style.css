@@ -151,6 +151,34 @@ body {
     text-transform: uppercase;
     font-family: 'Novecento Sans Web Normal'; }
 
+input[type=text], input[type=email] {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 35px;
+  width: 380px;
+  margin-top: 10px; }
+
+textarea {
+  background-color: #f2f2f2;
+  width: 760px;
+  height: 300px;
+  border: 1px solid #ccc; }
+
+input[type=submit] {
+  background-color: #248A83;
+  color: white;
+  font-size: 16px;
+  height: 40px;
+  width: 100px;
+  font-family: 'Novecento Sans Web Normal';
+  text-transform: uppercase; }
+
+label {
+  font-family: 'Novecento Sans Web Normal';
+  text-transform: uppercase;
+  font-size: 18px; }
+
 .about-hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/about-hero-min.jpg") center center;
   background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/about-hero-min.jpg") center center;
@@ -179,13 +207,24 @@ h2 {
 p {
   padding-left: 320px;
   padding-right: 320px;
-  color: #808080;
+  color: #404040;
   font-family: 'Merriweather Web Normal';
   font-size: 16px;
   line-height: 1.75; }
 
 p + p {
   margin-top: 30px; }
+
+.mapouter {
+  margin-left: 160px; }
+
+h2 {
+  text-align: left;
+  margin-left: 160px; }
+
+p {
+  margin-left: -155px;
+  margin-right: 160px; }
 
 @font-face {
   font-family: 'Novecento Sans Web Normal';

@@ -14,8 +14,8 @@ $args =array(
 
 // print_r($terms[0]);
 foreach($terms as $term) :
-    echo $term->name;
-    echo get_term_link($term);
+    // echo $term->name; // dont forget to uncomment
+    // echo get_term_link($term); // dont forget to uncomment
 endforeach;
 
 // print_r(get_post($args)); 
@@ -42,12 +42,12 @@ endwhile;
 ?>
 
 
-    <h1>My Site</h1>
+    <h1 class="my-site">My Site</h1>
     <?php if(have_posts() ):
 
     // echo "hello";
-    echo get_template_directory_uri(). "/assets/images/inhabitent-logo-tent.svg";
-    echo "<i class='fab fa-facebook-f'></i>";
+    // echo get_template_directory_uri(). "/assets/images/inhabitent-logo-tent.svg";
+    // echo "<i class='fab fa-facebook-f'></i>";
 
     //The WordPress Loop: loads post content
         while(have_posts() ):
@@ -55,7 +55,7 @@ endwhile;
             
         <h2><?php the_title(); ?> </h2>
         <!-- <h3><?php the_author();?></h3>  -->
-        <h3><?php the_permalink();?></h3> 
+        <!-- <h3><?php the_permalink();?></h3>  -->
         <?php the_content();?>
     <!-- loop ends -->
         <?php endwhile;?>
