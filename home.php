@@ -15,7 +15,7 @@
         <!-- <h3><?php the_author();?></h3> 
         <h3><?php the_permalink();?></h3>  -->
         <?php the_content();?>
-         
+        <button type="button">Read More &rarr;</button>
         <!-- <?php echo '$' . get_field('price'); ?> -->
     <!-- loop ends -->
         <?php endwhile;?>
