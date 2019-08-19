@@ -1,0 +1,18 @@
+.shop_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    box-sizing: border-box;
+
+    .shop_items{
+        flex: 25%;
+        justify-content: space-between;
+    img{
+        flex: 25%;
+        height:auto;
+        width:100px;
+        max-width: 100%;
+        }
+    }
+}

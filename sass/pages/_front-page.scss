@@ -1,3 +1,17 @@
 .my-site {
     // font-size: 200px;
 }
+.banner{
+    background:
+    url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/logos/inhabitent-logo-full.svg") center,
+    linear-gradient(
+            rgba(0,0,0,0.25) 0%,
+            rgba(0,0,0,0.25) 100%
+        ), 
+        url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/home-hero.jpg") top center;
+    background-size: auto auto, cover, cover;
+    background-repeat: no-repeat;
+    height: 710px;
+    width: auto;
+     
+}

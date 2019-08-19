@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <h1>My Site</h1>
+    <!-- <h1>My Site</h1> -->
     <?php if(have_posts() ):
 
     // echo "hello";

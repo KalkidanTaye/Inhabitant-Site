@@ -14,7 +14,8 @@
         <h2 class="header"><?php the_title(); ?> </h2>
         <!-- <h3><?php the_author();?></h3> 
         <h3><?php the_permalink();?></h3>  -->
-        <?php the_content();?>
+        <?php the_content();?> 
+        <?php echo wp_trim_words( get_the_content(), 53, ' [...]' ); ?>
         <button type="button">Read More &rarr;</button>
         <!-- <?php echo '$' . get_field('price'); ?> -->
     <!-- loop ends -->

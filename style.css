@@ -107,6 +107,23 @@ table {
 body {
   font-family: 'Novecento Sans Normal'; }
 
+@media only screen and (min-height: 200px) {
+  .menu-main-menu-container {
+    overflow: hidden;
+    position: fixed;
+    color: white; }
+    .menu-main-menu-container ul a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      list-style-type: none;
+      text-transform: uppercase; }
+    .menu-main-menu-container li {
+      display: inline;
+      padding-right: 10px; }
+    .menu-main-menu-container #menu-item-16, .menu-main-menu-container #menu-item-15, .menu-main-menu-container #menu-item-116, .menu-main-menu-container #menu-item-117 {
+      right: 0; } }
+
 /* text-align: justify; */
 .footer {
   background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/dark-wood.png");
@@ -225,6 +242,14 @@ h4 {
   padding-left: 20px;
   margin-left: 160px; }
 
+.banner {
+  background: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/logos/inhabitent-logo-full.svg") center, -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/home-hero.jpg") top center;
+  background: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/logos/inhabitent-logo-full.svg") center, linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/home-hero.jpg") top center;
+  background-size: auto auto, cover, cover;
+  background-repeat: no-repeat;
+  height: 710px;
+  width: auto; }
+
 .about-hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/about-hero-min.jpg") center center;
   background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/about-hero-min.jpg") center center;
@@ -271,6 +296,33 @@ h2 {
 p {
   margin-left: -155px;
   margin-right: 160px; }
+
+.shop_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .shop_container .shop_items {
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .shop_container .shop_items img {
+      -webkit-box-flex: 25%;
+          -ms-flex: 25%;
+              flex: 25%;
+      height: auto;
+      width: 100px;
+      max-width: 100%; }
 
 @font-face {
   font-family: 'Novecento Sans Web Normal';

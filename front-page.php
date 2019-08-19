@@ -1,4 +1,6 @@
-<?php get_header(); 
+<?php get_header(); ?>
+<div class ="banner"></div>
+<?php
 // Get catagory names and links for product
 $terms = get_terms(array(
 'taxonomy' => 'product-type',
@@ -14,8 +16,8 @@ $args =array(
 
 // print_r($terms[0]);
 foreach($terms as $term) :
-    // echo $term->name; // dont forget to uncomment
-    // echo get_term_link($term); // dont forget to uncomment
+    echo $term->name; // dont forget to uncomment
+    echo get_term_link($term); // dont forget to uncomment
 endforeach;
 
 // print_r(get_post($args)); 
@@ -24,7 +26,7 @@ $posts = (get_posts($args));
 foreach($posts as $post):
     setup_postdata($post);
     the_title();
-    the_content();
+    // the_content();
 endforeach;
 
 var_dump($blogs);
@@ -33,11 +35,12 @@ $blogs = new WP_Query(array(
     'post_type' => 'post',
     'posts_per_page' => 3, // -1 displays everything
     'order_by' => 'date',
-    'order' => 'ASC',
+    'order' => 'DSC',
 ));
 while($blogs->have_posts()) :
     $blogs->the_post();
     echo '<h2>', the_title() , '</h2>';
+    
 endwhile;
 ?>
 
@@ -53,10 +56,10 @@ endwhile;
         while(have_posts() ):
             the_post(); ?>
             
-        <h2><?php the_title(); ?> </h2>
+        <!-- <h2><?php the_title(); ?> </h2> -->
         <!-- <h3><?php the_author();?></h3>  -->
         <!-- <h3><?php the_permalink();?></h3>  -->
-        <?php the_content();?>
+        <!-- <?php the_content();?> -->
     <!-- loop ends -->
         <?php endwhile;?>
 
