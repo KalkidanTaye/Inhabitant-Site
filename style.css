@@ -200,8 +200,9 @@ button {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
-  width: 160px;
+  width: auto;
   height: 45px;
+  padding: 0 20px 0 20px;
   margin-left: 160px;
   margin-top: 30px;
   margin-bottom: 60px;
@@ -394,13 +395,24 @@ p {
   margin-left: -155px;
   margin-right: 160px; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 .shop_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 15px; }
-  .shop_container .shop_items img {
-    width: 50px;
-    height: auto; }
+  grid-template-columns: repeat(20%); }
+  .shop_container .shop_items {
+    grid-gap: 20px;
+    padding: 10px; }
+    .shop_container .shop_items .shop_images {
+      display: block; }
+      .shop_container .shop_items .shop_images img {
+        -o-object-fit: cover;
+           object-fit: cover;
+        width: auto;
+        height: 250px;
+        margin-left: 0; }
 
 .shop-link {
   display: inline;
@@ -419,6 +431,48 @@ hr.shop-line {
   margin-right: 150px;
   margin-top: 50px;
   margin-bottom: 50px; }
+
+.single-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+  .single-container img {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    width: 537px;
+    height: auto;
+    margin-top: 50px; }
+  .single-container .shop-content {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    margin-left: 50px; }
+    .single-container .shop-content .orange-title {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      color: #d99054;
+      margin-left: 0; }
+    .single-container .shop-content .price {
+      grid-column-start: 2;
+      grid-row-start: 2;
+      font-size: 30px;
+      font-family: 'Novecento Sans Web Normal';
+      margin-bottom: 10px; }
+    .single-container .shop-content p {
+      grid-column-start: 2;
+      grid-row-start: 3;
+      margin: 0 150px 0 0;
+      padding: 0 0 0 0; }
+    .single-container .shop-content .single-button {
+      margin-left: 0px; }
+    .single-container .shop-content i {
+      padding-right: 10px; }
 
 @font-face {
   font-family: 'Novecento Sans Web Normal';

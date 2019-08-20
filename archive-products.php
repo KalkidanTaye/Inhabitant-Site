@@ -19,41 +19,41 @@ endforeach;
 ?>
 <hr class="shop-line">
 
-<div class="product-container">
+<!-- <div class="product-container">
     <div class= "products">
         <div></div>
     </div>
-</div>
+</div> -->
 
-    <?php if(have_posts() ):
+    <?php if(have_posts() ):?>
 
-    // echo "hello";
-
-    // echo "<i class='fab fa-facebook-f'></i>";
+<section class="shop_container"> 
+      <div class="shop_items"> 
+          <div class="shop_images"> 
+             
+<?php
 
     //The WordPress Loop: loads post content
         while(have_posts() ):
             the_post(); ?>
-            
-    <section class="shop_container"> 
-      <div class="shop_items"> 
-          <div class="shop_images"> 
-          
-        <?php echo '<div class="shop_images">',  get_the_post_thumbnail(), '</div>';?>
-        <!-- <h2 class="shop-header"><?php the_title(); ?> </h2> -->
+        
+        <?php echo get_the_post_thumbnail();?>
+     <!-- <?php the_title(); ?>  -->
+      <!-- <hr class="price"> -->
         <!-- <?php echo '$' . get_field('price'); ?> -->
+       
+    <!-- loop ends -->
+        <?php endwhile;?>
+       
         </div>
         </div>
         </section>
-    <!-- loop ends -->
-        <?php endwhile;?>
-
         <?php the_posts_navigation();?>
 
 <?php else : ?>
             <p> No Posts found</p>
  <?php endif;?>
 
- <h1>this is the product/shop page</h1>
+
 
     <?php get_footer(); ?>
