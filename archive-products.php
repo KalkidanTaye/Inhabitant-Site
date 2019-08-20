@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-
-    <h1>this is the product/shop page</h1>
+<h1 class ="front_header"> Shop Stuff</h1>
+   
     <?php
 // Get catagory names and links for product
 $terms = get_terms(array(
@@ -8,12 +8,17 @@ $terms = get_terms(array(
 'hide-empty' => 0
 ));
 // print_r($terms[0]);
+
 foreach($terms as $term) :
-    ?>
-    <a href=<?php echo get_term_link($term);?> > <?php echo $term->name;?></a>
+    ?>   
+    <div class="shop-link">
+     <a class ="shop_stuff" href=<?php echo get_term_link($term);?> > <?php echo $term->name;?></a>
+</div>
 <?php
 endforeach;
 ?>
+<hr class="shop-line">
+
 <div class="product-container">
     <div class= "products">
         <div></div>
@@ -30,17 +35,20 @@ endforeach;
         while(have_posts() ):
             the_post(); ?>
             
-    <div class="shop_container"> 
-      <div class="shop_items">  
-        <?php echo get_the_post_thumbnail(); ?>
+    <section class="shop_container"> 
+      <div class="shop_items"> 
+          <div class="shop_images"> 
+          
+        <?php echo '<div class="shop_images">',  get_the_post_thumbnail(), '</div>';?>
         <!-- <h2 class="shop-header"><?php the_title(); ?> </h2> -->
         <!-- <?php echo '$' . get_field('price'); ?> -->
         </div>
-    </div>
+        </div>
+        </section>
     <!-- loop ends -->
         <?php endwhile;?>
 
-        <!-- <?php the_posts_navigation();?> -->
+        <?php the_posts_navigation();?>
 
 <?php else : ?>
             <p> No Posts found</p>

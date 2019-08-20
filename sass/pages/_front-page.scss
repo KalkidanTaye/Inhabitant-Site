@@ -15,3 +15,89 @@
     width: auto;
      
 }
+.shop_container{
+    display:flex;
+    // padding-left: 200px;
+    justify-content: space-around;
+    align-items: center;
+    // width:280px;
+    margin-left: 160px;
+   
+    .do{
+        flex: 30%;
+        background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/product-type-icons/do.svg");
+        background-size: contain;
+        background-position: center;
+        height:70px;
+        width: 70px;
+        background-repeat: no-repeat;
+        border-style: solid 1px;
+       margin: 0 0 0 0;
+        
+    }
+    .eat{
+        flex: 30%;
+        background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/product-type-icons/eat.svg");
+        background-size: contain;
+        background-position: center;
+        height:70px;
+        width: 70px;
+        background-repeat: no-repeat;
+    }
+    .sleep{
+        flex: 30%;
+        background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/product-type-icons/sleep.svg");
+        background-size: contain;
+        background-position: center;
+        height:70px;
+        width: 70px;
+        background-repeat: no-repeat;
+        
+    }
+    .wear{
+        flex: 25%;
+        background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/product-type-icons/wear.svg");
+        background-size: contain;
+        background-position: center;
+        height:70px;
+        width: 70px;
+        background-repeat: no-repeat;
+    }
+    .do_p{
+       
+        // position: absolute;
+        text-align: center;
+        // padding-left: 20px;
+        padding: 0 0 0 0;
+        // margin-left: 160px;
+        margin-top: 50px;
+        margin-right: 10px;
+    }
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 150px;
+    // grid-gap: 10px;
+    padding-right: 120px;
+    
+
+    
+}
+.journal_img img{
+    height: 250px;
+    width: 365px;
+    margin-left: 0;
+   justify-self: center;
+    
+  
+}
+.front_header{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #2f1339;
+
+}

@@ -11,7 +11,27 @@ button{
     border: 1px solid;
     text-decoration: none;
 }
-button:hover{
+
+button:hover, .read_more:hover{
     color:white;
     background-color: #248A83;
+}
+.read_more {
+    text-decoration: none;
+    color: inherit;
+}
+.read_more_shop {
+    text-decoration: none;
+    color: inherit;
+}
+.shop_button{
+    margin-top: 100px;
+    background-color: #248A83;
+    color: white;
+    text-decoration: none;
+    // position: absolute;
+}
+.shop_button:hover, .read_more_shop:hover{
+    background-color: rgb(24, 96, 91);
+    color:white;
 }

@@ -12,12 +12,13 @@
             the_post(); ?>
             
         <h2 class="header"><?php the_title(); ?> </h2>
-        <!-- <h3><?php the_author();?></h3> 
-        <h3><?php the_permalink();?></h3>  -->
-        <?php the_content();?> 
-        <?php echo wp_trim_words( get_the_content(), 53, ' [...]' ); ?>
-        <button type="button">Read More &rarr;</button>
-        <!-- <?php echo '$' . get_field('price'); ?> -->
+        
+        <h3></h3> 
+        <!-- <?php the_content();?>  -->
+        <?php echo get_the_post_thumbnail(); ?>
+       <p> <?php echo wp_trim_words( get_the_content(), 53, ' [...]' ); ?> </p>
+        <button type="button"><a class ="read_more" href= "<?php the_permalink();?>">Read More &rarr;</a></button>
+        
     <!-- loop ends -->
         <?php endwhile;?>
 

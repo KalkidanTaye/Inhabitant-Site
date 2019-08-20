@@ -9,8 +9,11 @@
     <title><?php bloginfo('title');?></title>
 </head>
 <body <?php body_class();?>>
-
+<nav>
 <?php wp_nav_menu( array(
-    'theme_location' => 'primary'
-)); ?>
+    'theme_location' => 'primary')); ?>
+    <div class="header-search">
+    <?php get_search_form();?>
+    </div>
+</nav>
 <!-- <h1> <?php bloginfo('name');?></h1> -->

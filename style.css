@@ -209,9 +209,27 @@ button {
   border: 1px solid;
   text-decoration: none; }
 
-button:hover {
+button:hover, .read_more:hover {
   color: white;
   background-color: #248A83; }
+
+.read_more {
+  text-decoration: none;
+  color: inherit; }
+
+.read_more_shop {
+  text-decoration: none;
+  color: inherit; }
+
+.shop_button {
+  margin-top: 100px;
+  background-color: #248A83;
+  color: white;
+  text-decoration: none; }
+
+.shop_button:hover, .read_more_shop:hover {
+  background-color: #18605b;
+  color: white; }
 
 .header {
   background-color: #248A83;
@@ -250,6 +268,84 @@ h4 {
   height: 710px;
   width: auto; }
 
+.shop_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 160px; }
+  .shop_container .do {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+    background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/product-type-icons/do.svg");
+    background-size: contain;
+    background-position: center;
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    border-style: solid 1px;
+    margin: 0 0 0 0; }
+  .shop_container .eat {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+    background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/product-type-icons/eat.svg");
+    background-size: contain;
+    background-position: center;
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat; }
+  .shop_container .sleep {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+    background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/product-type-icons/sleep.svg");
+    background-size: contain;
+    background-position: center;
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat; }
+  .shop_container .wear {
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
+    background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/product-type-icons/wear.svg");
+    background-size: contain;
+    background-position: center;
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat; }
+  .shop_container .do_p {
+    text-align: center;
+    padding: 0 0 0 0;
+    margin-top: 50px;
+    margin-right: 10px; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 150px;
+  padding-right: 120px; }
+
+.journal_img img {
+  height: 250px;
+  width: 365px;
+  margin-left: 0;
+  justify-self: center; }
+
+.front_header {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #2f1339; }
+
 .about-hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/about-hero-min.jpg") center center;
   background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/about-hero-min.jpg") center center;
@@ -278,6 +374,7 @@ h2 {
 p {
   padding-left: 320px;
   padding-right: 320px;
+  padding-top: 25px;
   color: #404040;
   font-family: 'Merriweather Web Normal';
   font-size: 16px;
@@ -298,31 +395,30 @@ p {
   margin-right: 160px; }
 
 .shop_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-  .shop_container .shop_items {
-    -webkit-box-flex: 25%;
-        -ms-flex: 25%;
-            flex: 25%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .shop_container .shop_items img {
-      -webkit-box-flex: 25%;
-          -ms-flex: 25%;
-              flex: 25%;
-      height: auto;
-      width: 100px;
-      max-width: 100%; }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px; }
+  .shop_container .shop_items img {
+    width: 50px;
+    height: auto; }
+
+.shop-link {
+  display: inline;
+  text-transform: capitalize;
+  text-align: center; }
+  .shop-link .shop_stuff {
+    color: #248A83;
+    text-decoration: none;
+    font-size: 22px;
+    text-align: center;
+    padding-left: 25px; }
+
+hr.shop-line {
+  border-top: 1px dashed #a1a1a1;
+  margin-left: 160px;
+  margin-right: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 @font-face {
   font-family: 'Novecento Sans Web Normal';
