@@ -1,28 +1,33 @@
 <?php get_header(); ?>
 <div class ="banner"></div>
 <h1 class ="front_header"> Shop Stuff</h1>
-<div class="shop_container">
-    
-    <div class="do">
-        <p class="do_p">Get back to nature with all the tools 
-            and toys you need to enjoy the great outdoors.</p>
-        <div id="shop_stuff"></div>
+<div class="shop_stuff_container">
+    <div class="inner-container">
+        <div class="do">
+            <p class="do_p">Get back to nature with all the tools 
+                            and toys you need to enjoy the great outdoors.</p>
+        </div>
     </div>
-    <div class="eat">
-    <p class="do_p">Nothing beats food cooked over a fire. 
-        We have all you need for good camping eats.
-</p>
+    <div class="inner-container">
+        <div class="eat">
+        <p class="do_p">Nothing beats food cooked over a fire. 
+                        We have all you need for good camping eats.
+        </p>
+        </div>
     </div>
-    
-    <div class="sleep">
-    <p class="do_p">
-    Get a good night's rest in the wild in 
-        a home away from home that travels well.
-</p> 
+    <div class="inner-container">
+        <div class="sleep">
+            <p class="do_p">
+                Get a good night's rest in the wild in 
+                a home away from home that travels well.
+            </p> 
+        </div>
     </div>
-    <div class="wear">
-    <p class="do_p">From flannel shirts to toques, look the 
-        part while roughing it in the great outdoors.</p>
+    <div class="inner-container">
+        <div class="wear">
+        <p class="do_p">From flannel shirts to toques, look the 
+            part while roughing it in the great outdoors.</p>
+        </div>
     </div>
 </div>
 <?php
@@ -73,7 +78,7 @@ while($blogs->have_posts()) :
     $blogs->the_post();
    
    echo '<div class="journal_img">', get_the_post_thumbnail() , '</div>'; 
-//    echo '<h5>', the_title() , '</h5>';
+   echo '<h5>', the_title() , '</h5>';
 endwhile;
 ?>
 </div>
