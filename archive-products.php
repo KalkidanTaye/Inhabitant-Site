@@ -29,18 +29,21 @@ endforeach;
 
 <section class="shop_container"> 
       <div class="shop_items"> 
-          <div class="shop_images"> 
+          
              
 <?php
 
     //The WordPress Loop: loads post content
         while(have_posts() ):
             the_post(); ?>
-        
+        <div class="shop_images"> 
         <?php echo get_the_post_thumbnail();?>
+        </div>
+        <!-- <div class="title-price"> -->
      <!-- <?php the_title(); ?>  -->
       <!-- <hr class="price"> -->
         <!-- <?php echo '$' . get_field('price'); ?> -->
+        <!-- </div> -->
        
     <!-- loop ends -->
         <?php endwhile;?>

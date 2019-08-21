@@ -1,8 +1,5 @@
 <?php wp_footer(); 
-// echo "Hello";
 ?>
-<!-- <h1>World</h1> -->
-
 <section class = "footer"> 
     <div class="footer-content">
          <h2>Contact Info</h2>
@@ -22,6 +19,10 @@
              <p>Copyright &copy; 2019 Inhabitent</p>
          </div>
 </section>
-
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src = "../../../../Inhabitant/wp-content/themes/Inhabitant/js/navigation.js"></script>
 </body>
 </html>

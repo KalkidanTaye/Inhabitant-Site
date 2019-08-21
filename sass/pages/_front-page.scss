@@ -1,6 +1,3 @@
-.my-site {
-    // font-size: 200px;
-}
 .banner{
     background:
     url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/logos/inhabitent-logo-full.svg") center,
@@ -11,6 +8,7 @@
         url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/home-hero.jpg") top center;
     background-size: auto auto, cover, cover;
     background-repeat: no-repeat;
+    top:0;
     height: 710px;
     width: auto;
      

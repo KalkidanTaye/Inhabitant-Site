@@ -1,3 +1,6 @@
+jQuery(document).ready(function(){
+
+
 (function($) {
   'use strict';
 
@@ -20,3 +23,17 @@
     });
   });
 })(jQuery);
+
+//Sticky Navigation
+jQuery(window).scroll(function(){
+  if ($(window).scrollTop() >= 710) {
+      $('nav').addClass('fixed-header');
+      
+  }
+  else {
+      $('nav').removeClass('fixed-header');
+      
+  }
+});
+
+});

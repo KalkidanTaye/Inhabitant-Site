@@ -1,24 +1,71 @@
-
-  @media only screen and (min-height: 200px){
-    .menu-main-menu-container {
-        overflow: hidden;
-        position: fixed;
-        // width: 100%;
-        color:white;
-        
-        ul a{
-            color:white;
-            text-decoration: none;
-            font-size:18px;
-            list-style-type: none;
-            text-transform: uppercase;
-        }
-        li{
-            display: inline;
-            padding-right: 10px;
-        }
-        #menu-item-16, #menu-item-15, #menu-item-116,#menu-item-117 {
-    right: 0;
+    
+        .menu-main-menu-container {
+            overflow: hidden;
+            position: absolute;
+            right: 0; 
+            margin-right: 150px;
+            padding-top: 15px;
+            z-index: 10;
+            ul a{
+                color:white;
+                text-decoration: none;
+                font-size:16px;
+                list-style-type: none;
+                text-transform: uppercase; 
+            }
+            li{
+                display: inline;
+                padding-right: 15px;
+            }
+           
+           }
+           .fixed-header{
+            z-index:10;
+            position:fixed;
+            .nav-container{
+            height: 50px;
+            width: 1440px;
+            background-color: white;
+            background: rgba(255, 255, 255, 0.8);
+            border: 0.1px solid #e1e1e1;
+            img{
+                // display: none;
+            }
+            .home-nav{
+                background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/logos/inhabitent-logo-text-dark.svg");
+                height:33px;
+                width: auto;
+                position: absolute;
+                z-index: 10;
+            }
+            
+            .menu-main-menu-container{
+                position:fixed;
+            ul a{
+                z-index:10;
+                color:#248A83;
+                text-decoration: none;
+                font-size:16px;
+                list-style-type: none;
+                text-transform: uppercase;
+                
+            }
+            li{
+                display: inline;
+                padding-right: 10px;
+            }
         }
     }
-  }
+}
+        // nav{
+        //     position: fixed;
+        //     z-index:10;
+        // }
+        .home-nav{
+            height:33px;
+            width: auto;
+            position: absolute;
+            z-index: 10;
+        }
+    
+    
