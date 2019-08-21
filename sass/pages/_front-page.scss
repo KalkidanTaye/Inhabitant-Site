@@ -17,7 +17,6 @@
     display:flex;
     flex: 100%;
     flex-wrap: nowrap;
-    flex: 100%;
     align-items: center;
     margin-left: 160px;
     
@@ -90,12 +89,13 @@
     
    }
    .inner-container:hover{
-border-color: #d99054;
+        border-color: #d99054;
    }
   
     
 }
 
+//Needs WORK!!!
 .shop_button{
     
     margin: -60px 0 0 230px;
@@ -109,24 +109,69 @@ border-color: #d99054;
 
 }
 
-.container{
+.outer-container{
     display: flex;
-    flex:100%;
-    margin-left: 150px;
-    // grid-gap: 10px;
-    padding-right: 120px;
-    
+    flex: 100%;
+    flex-wrap: nowrap;
+    margin: 0 0 0 160px;
+    // padding-left: 30px;
+    .journal_img img{
+        flex: 30%;
+        height: 250px;
+        width: 365px;
+        margin-left: 0;
+        margin-right: 20px;
+    //    justify-self: center;
+        
+      
+    }
 
-    
+
 }
-.journal_img img{
-    height: 250px;
+.outer-title-container{
+    display: flex;
+    flex: 100%;
+    flex-wrap: nowrap;
+    margin-left: 160px;
+   .title-container{
+    border: 1px solid #e1e1e1;
+    border-top: 5px solid  #e1e1e1;
     width: 365px;
-    margin-left: 0;
-   justify-self: center;
+    height:162px;
+    margin-top: -3px;
+    margin-right: 20px;
+    h5{
+        margin-left: 10px;
+    }
+    a.journal-link {
+        color: #248A83;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-family: 'Novecento Sans Web Bold';
+        letter-spacing: 2px;
+        line-height: 26px;
+        margin: 0 0 0 10px;
+        
+   }
+   .journal_link{
+    margin-left: 10px;
+   }
+   a.journal-link:hover{
+       color:#2f1339;
+   } 
+   
+   }
+ 
+   button{
+    margin-left: 10px;
+    margin-top: 20px;
     
+   }
   
 }
+
+
 .front_header{
     text-align: center;
     font-size: 40px;

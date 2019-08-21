@@ -158,7 +158,6 @@ body {
   position: absolute;
   z-index: 10; }
 
-/* text-align: justify; */
 .footer {
   background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/dark-wood.png");
   background-repeat: repeat;
@@ -313,7 +312,6 @@ h4 {
           flex: 100%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  flex: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -378,21 +376,60 @@ h4 {
   display: inline;
   position: absolute; }
 
-.container {
+.outer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  margin-left: 150px;
-  padding-right: 120px; }
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0 0 0 160px; }
+  .outer-container .journal_img img {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+    height: 250px;
+    width: 365px;
+    margin-left: 0;
+    margin-right: 20px; }
 
-.journal_img img {
-  height: 250px;
-  width: 365px;
-  margin-left: 0;
-  justify-self: center; }
+.outer-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-left: 160px; }
+  .outer-title-container .title-container {
+    border: 1px solid #e1e1e1;
+    border-top: 5px solid  #e1e1e1;
+    width: 365px;
+    height: 162px;
+    margin-top: -3px;
+    margin-right: 20px; }
+    .outer-title-container .title-container h5 {
+      margin-left: 10px; }
+    .outer-title-container .title-container a.journal-link {
+      color: #248A83;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 22px;
+      font-family: 'Novecento Sans Web Bold';
+      letter-spacing: 2px;
+      line-height: 26px;
+      margin: 0 0 0 10px; }
+    .outer-title-container .title-container .journal_link {
+      margin-left: 10px; }
+    .outer-title-container .title-container a.journal-link:hover {
+      color: #2f1339; }
+  .outer-title-container button {
+    margin-left: 10px;
+    margin-top: 20px; }
 
 .front_header {
   text-align: center;
@@ -463,19 +500,33 @@ p {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0; }
-  .shop_container .shop_items {
-    padding: 10px; }
-    .shop_container .shop_items .shop_images {
-      width: 260px;
+  margin-left: 160px; }
+  .shop_container .shop_images {
+    display: grid;
+    grid-template-columns: 260px;
+    grid-template-rows: auto 52px;
+    width: 260px;
+    height: auto;
+    overflow: hidden;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-right: 30px;
+    margin-top: 30px; }
+    .shop_container .shop_images img {
+      width: auto;
       height: 250px;
       margin-left: 0; }
-      .shop_container .shop_items .shop_images img {
-        width: auto;
-        height: 250px;
-        margin-left: 0; }
+    .shop_container .shop_images hr.price {
+      width: 50px; }
+    .shop_container .shop_images .price-title {
+      text-align: center;
+      width: 260px;
+      height: 52px;
+      border: 1px solid #e1e1e1;
+      border-top: 5px solid  #e1e1e1;
+      font-family: 'Merriweather Web Normal';
+      padding-top: 15px;
+      margin-top: -3px; }
 
 .shop-link {
   display: inline;
@@ -494,7 +545,7 @@ hr.shop-line {
   margin-left: 160px;
   margin-right: 150px;
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 10px; }
 
 .single-container {
   display: -webkit-box;

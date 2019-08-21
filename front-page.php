@@ -72,16 +72,31 @@ $blogs = new WP_Query(array(
 ));
 ?>
 <h1 class ="front_header"> Inhabitent Journal</h1>
-<div class="container">
+<div class="outer-container">
 <?php
 while($blogs->have_posts()) :
-    $blogs->the_post();
-   
-   echo '<div class="journal_img">', get_the_post_thumbnail() , '</div>'; 
-   echo '<h5>', the_title() , '</h5>';
-endwhile;
+    $blogs->the_post();?>
+
+ <?php  echo '<div class="journal_img">', get_the_post_thumbnail() , '</div>'; ?>
+ 
+ <?php endwhile;
 ?>
 </div>
+<div class="outer-title-container">
+ <?php
+while($blogs->have_posts()) :
+    $blogs->the_post();?>
+  <div class="title-container">
+  <a class= "journal-link" href= "<?php the_permalink();?>">
+  <?php echo '<h5 class"journal-title">', the_title() , '</h5>';?></a>
+
+   <button type="button"><a class ="read_more journal-button" href= "<?php the_permalink();?>">Read Entry</a></button>
+   </div>
+<?php endwhile;
+?>
+</div>
+
+
 
 
     <?php if(have_posts() ):

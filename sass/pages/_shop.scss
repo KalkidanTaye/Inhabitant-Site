@@ -5,30 +5,54 @@
     display: flex;
     flex-wrap: wrap;
     flex: 100%;
-    // margin-top: 250px;
-    flex: 1 1 0; 
-    .shop_items{
-        // flex:20%;
+    margin-left: 160px;
+    // width:260px;
+   .shop_images{
+        // flex: 20%;
+        display: grid;
+        grid-template-columns: 260px;
+        grid-template-rows: auto 52px;
+        width: 260px;
+        height: auto;
+        overflow: hidden;
+        align-content: center;
+        margin-right: 30px;
+        margin-top: 30px;
         
-        padding: 10px;
-        .shop_images{
-            // flex:20%;
-            // display: block;
-            width:260px;
-            height:250px;
+        // 
+        img{
+            width: auto;
+            height: 250px;
             margin-left: 0;
-                img{
-                    width: auto;
-                    height: 250px;
-                    margin-left: 0;
-                }
-                }
-
+            // display:block;
+            
         }
+        hr.price{
+            width:50px;
+            // display: inline;
+        }
+        .price-title{
+            text-align: center;
+        width: 260px;
+        height: 52px;
+        border: 1px solid #e1e1e1;
+        border-top: 5px solid  #e1e1e1;
+        font-family: 'Merriweather Web Normal';
+        padding-top: 15px;
+        margin-top: -3px;
+        }
+        
+
+
+
+
+    }
+
+}
 
     
        
-    }
+    
 
 .shop-link{
     display:inline;
@@ -49,7 +73,7 @@ border-top: 1px dashed #a1a1a1;
 margin-left: 160px;
 margin-right: 150px;
 margin-top: 50px;
-margin-bottom: 50px;
+margin-bottom: 10px;
 
  }
 

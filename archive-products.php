@@ -27,30 +27,30 @@ endforeach;
 
     <?php if(have_posts() ):?>
 
-<section class="shop_container"> 
-      <div class="shop_items"> 
-          
-             
+<div class="shop_container">             
 <?php
-
     //The WordPress Loop: loads post content
+
         while(have_posts() ):
             the_post(); ?>
         <div class="shop_images"> 
+        <a class= "journal-link" href= "<?php the_permalink();?>">
         <?php echo get_the_post_thumbnail();?>
-        </div>
-        <!-- <div class="title-price"> -->
-     <!-- <?php the_title(); ?>  -->
+        </a>
+        <div class="price-title">
+     <?php the_title(); echo ' .........'?> 
       <!-- <hr class="price"> -->
-        <!-- <?php echo '$' . get_field('price'); ?> -->
-        <!-- </div> -->
-       
-    <!-- loop ends -->
+        <?php echo '$' . get_field('price'); ?>
+     
+    </div>
+    </div>
         <?php endwhile;?>
-       
-        </div>
-        </div>
-        </section>
+        
+    </div>
+
+    
+      
+        
         <?php the_posts_navigation();?>
 
 <?php else : ?>
