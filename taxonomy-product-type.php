@@ -1,22 +1,30 @@
 <?php get_header(); ?>
-hello
-    <h1>My Site</h1>
-    <?php if(have_posts() ):
+<h1 class ="front_header"><?php echo $term->name;?></h1>
+<p> <?php echo category_description(); ?> </p>
+    <?php if(have_posts() ):?>
 
-    // echo "hello";
 
-    // echo "<i class='fab fa-facebook-f'></i>";
-
+    
+<div class="shop_container">             
+<?php
     //The WordPress Loop: loads post content
+
         while(have_posts() ):
             the_post(); ?>
-            
-        <!-- <h2><?php the_title(); ?> </h2> -->
-        <!-- <h3><?php the_author();?></h3>  -->
-        <!-- <h3><?php the_permalink();?></h3>  -->
-        <?php the_content();?>
-    <!-- loop ends -->
+        <div class="shop_images"> 
+        <a class= "journal-link" href= "<?php the_permalink();?>">
+        <?php echo get_the_post_thumbnail();?>
+        </a>
+        <div class="price-title">
+     <?php the_title(); echo ' .........'?> 
+      <!-- <hr class="price"> -->
+        <?php echo '$' . get_field('price'); ?>
+     
+    </div>
+    </div>
         <?php endwhile;?>
+        
+    </div>
 
         <?php the_posts_navigation();?>
 
