@@ -176,3 +176,69 @@
     color: #2f1339;
 
 }
+
+.adventure-container{
+    .adventure-image{
+        display:flex;
+        flex-flow: column wrap;
+        // flex-wrap: wrap;
+        flex:100%;
+        .canoe-girl{
+            flex:40%;
+            background:
+                linear-gradient(
+                     rgba(0,0,0,0.25) 0%,
+                     rgba(0,0,0,0.25) 100%
+                ), 
+                 url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/canoe-girl.jpg") center center;
+                background-size: cover, cover;
+                background-repeat: no-repeat;
+              
+                height: 550px;
+                width: 550px;
+                margin-left: 160px;
+        }
+        .beach-fire{
+            flex: 40%;
+            background:
+                linear-gradient(
+                     rgba(0,0,0,0.25) 0%,
+                     rgba(0,0,0,0.25) 100%
+                ), 
+                 url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/beach-bonfire.jpg") center center;
+                background-size: cover, cover;
+                background-repeat: no-repeat;
+              
+                height: 265px;
+                width: 550px;
+        }
+        .mountain-hiker{
+            // flex: 20%;
+            background:
+                linear-gradient(
+                     rgba(0,0,0,0.25) 0%,
+                     rgba(0,0,0,0.25) 100%
+                ), 
+                 url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/mountain-hikers.jpg") center center;
+                background-size: cover, cover;
+                background-repeat: no-repeat;
+              
+                height: 265px;
+                width: 265px;
+        }
+        .night-sky{
+            background:
+                linear-gradient(
+                     rgba(0,0,0,0.25) 0%,
+                     rgba(0,0,0,0.25) 100%
+                ), 
+                 url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/night-sky.jpg") center center;
+                background-size: cover, cover;
+                background-repeat: no-repeat;
+              
+                height: 265px;
+                width: 265px;
+       
+        }
+        }
+    }

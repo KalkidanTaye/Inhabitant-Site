@@ -50,14 +50,7 @@
     i{
         padding-right:10px;
     }
-    .fa-phone-alt{
-      margin-bottom:500px;
-      margin-right: 20px;
-        // display: inline;
-       position: absolute;
-       top: 115px;
-       left:45px;
-    }
+    
    h2{
        padding-left:0;
        margin-left: 50px;
@@ -75,6 +68,15 @@
         text-decoration: none;
         color:#248A83;
     }
+    
+        .biz-hours-class{
+            h2.widget-title{
+                    display: none;
+                
+            }
+        
+    }
+    
 }
 
 

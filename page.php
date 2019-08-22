@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
-  
+<div class="contact-container">
+    <div class="contact-inner">
     <?php if(have_posts() ):
     //The WordPress Loop: loads post content
         while(have_posts() ):
@@ -10,7 +11,7 @@
         <?php the_content();?>
     <!-- loop ends -->
         <?php endwhile;?>
-
+        </div>
         <?php the_posts_navigation();?>
 
 <?php else : ?>
@@ -18,6 +19,11 @@
  <?php endif;?>
 
 <!-- call in sidebar -->
-<?php dynamic_sidebar('sidebar-1');?>
+
+<div class="sidebar">
+    
+ <?php dynamic_sidebar('sidebar-1');?>
+</div>
+ </div>
 
     <?php get_footer(); ?>

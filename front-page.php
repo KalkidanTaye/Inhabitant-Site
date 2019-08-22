@@ -96,33 +96,27 @@ while($blogs->have_posts()) :
 ?>
 </div>
 
+<h1 class ="front_header"> Latest Adventures</h1>
+
+<div class="adventure-container">
+    <div class="adventure-image">
+        <div class="canoe-girl">
+            <button type="button" class ="read_more adventure-button">Read More</button>
+        </div>
+        <div class="beach-fire">
+            <button type="button" class ="read_more adventure-button">Read More</button>
+        </div>
+        <div class="mountain-hiker">
+            <button type="button" class ="read_more adventure-button">Read More</button>
+        </div>
+        <div class="night-sky">
+            <button type="button" class ="read_more adventure-button">Read More</button>
+        </div>
+    </div>
+</div>
+    
+        
 
 
-
-    <?php if(have_posts() ):
-
-    // echo "hello";
-    // echo get_template_directory_uri(). "/assets/images/inhabitent-logo-tent.svg";
-    // echo "<i class='fab fa-facebook-f'></i>";
-
-    //The WordPress Loop: loads post content
-        while(have_posts() ):
-            the_post(); ?>
-            
-        <!-- <h2><?php the_title(); ?> </h2> -->
-        <!-- <h3><?php the_author();?></h3>  -->
-        <!-- <h3><?php the_permalink();?></h3>  -->
-        <!-- <?php the_content();?> -->
-    <!-- loop ends -->
-        <?php endwhile;?>
-
-
-        <?php the_posts_navigation();?>
-
-<?php else : ?>
-            <p> No Posts found</p>
- <?php endif;?>
-
-<!-- call in sidebar -->
 
     <?php get_footer(); ?>

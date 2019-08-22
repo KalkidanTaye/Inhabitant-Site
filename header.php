@@ -17,7 +17,7 @@
     'theme_location' => 'primary')); ?>
 </div>
     <div class="header-search">
-    <!-- <?php get_search_form();?> uncomment this  -->
+    <!-- <?php get_search_form();?> -->
     </div>
 </nav>
 <!-- <h1> <?php bloginfo('name');?></h1> -->

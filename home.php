@@ -28,7 +28,7 @@
  <div class="sidebar">
     
  <?php dynamic_sidebar('sidebar-1');?>
- <!-- <?php echo '<i class="fas fa-phone-alt"></i>' ?> -->
+ 
  </div>
  </div>
  <?php get_footer(); ?>

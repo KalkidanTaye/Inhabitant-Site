@@ -45,7 +45,7 @@ function inhabitent_sidebar_widget(){
         'description' => 'This is a nice bar',
         'before_widget' => '<aside id="%1$s" class="%2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h2 class=widget-title">',
+        'before_title' => '<h2 class="widget-title">',
         'after_title' => '</h2>'
     ));
 }
