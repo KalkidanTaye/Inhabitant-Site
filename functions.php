@@ -99,6 +99,76 @@ function inhabitant_register_taxonomies(){
         ));
 }
 //Custom Taxonomies
-add_action('init', 'inhabitant_register_taxonomies')
+add_action('init', 'inhabitant_register_taxonomies');
 
+
+
+// Custom post type function
+function create_posttype() {
+    register_post_type( 'adventures',
+        array(
+            'labels' => array(
+                'name' => __( 'Adventures' ),
+                'singular_name' => __( 'Adventure' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'adventures'),
+        )
+    );
+}
+
+add_action( 'init', 'create_posttype' );
+
+
+/*
+* Creating a function to create Custom Post Types
+*/
+ 
+function custom_post_type() {
+ 
+    // Set UI labels for Custom Post Type
+        $labels = array(
+            'name'                => _x( 'Adventures', 'Post Type General Name', 'inhabitant' ),
+            'singular_name'       => _x( 'Adventure', 'Post Type Singular Name', 'inhabitant' ),
+            'menu_name'           => __( 'Adventures', 'inhabitant' ),
+            'all_items'           => __( 'All Adventures', 'inhabitant' ),
+            'view_item'           => __( 'View Adventure', 'inhabitant' ),
+            'add_new_item'        => __( 'Add New Adventure', 'inhabitant' ),
+            'add_new'             => __( 'Add New', 'inhabitant' ),
+            'edit_item'           => __( 'Edit Adventure', 'inhabitant' ),
+            'update_item'         => __( 'Update Adventure', 'inhabitant' ),
+            'search_items'        => __( 'Search Adventure', 'inhabitant' ),
+        
+        );
+         
+    // Set other options for Custom Post Type
+         
+        $args = array(
+            'label'               => __( 'adventures', 'inhabitant' ),
+            'description'         => __( 'Latest Adventures', 'inhabitant' ),
+            'labels'              => $labels,
+            // Features this CPT supports in Post Editor
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+            'taxonomies'          => array( 'adventure' ),
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 2,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'exclude_from_search' => false,
+            'capability_type'     => 'page',
+        );
+         
+        // Registering Custom Post Type
+        register_post_type( 'adventures', $args );
+     
+    }
+     
+    add_action( 'init', 'custom_post_type', 0 );
 ?>
+
+

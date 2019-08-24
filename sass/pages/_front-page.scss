@@ -178,67 +178,89 @@
 }
 
 .adventure-container{
-    .adventure-image{
-        display:flex;
-        flex-flow: column wrap;
-        // flex-wrap: wrap;
-        flex:100%;
-        .canoe-girl{
-            flex:40%;
-            background:
-                linear-gradient(
-                     rgba(0,0,0,0.25) 0%,
-                     rgba(0,0,0,0.25) 100%
-                ), 
-                 url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/canoe-girl.jpg") center center;
-                background-size: cover, cover;
-                background-repeat: no-repeat;
-              
-                height: 550px;
-                width: 550px;
-                margin-left: 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   grid-gap:20px; 
+    margin-left:160px;
+        img{
+            margin-left: 0;
+            object-fit:contain; 
         }
-        .beach-fire{
-            flex: 40%;
-            background:
-                linear-gradient(
-                     rgba(0,0,0,0.25) 0%,
-                     rgba(0,0,0,0.25) 100%
-                ), 
-                 url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/beach-bonfire.jpg") center center;
-                background-size: cover, cover;
-                background-repeat: no-repeat;
-              
-                height: 265px;
-                width: 550px;
+        .adventure_img1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            position: relative;
+            width:550px;
+            height:550px;
+            overflow: hidden;
+            
         }
-        .mountain-hiker{
-            // flex: 20%;
-            background:
-                linear-gradient(
-                     rgba(0,0,0,0.25) 0%,
-                     rgba(0,0,0,0.25) 100%
-                ), 
-                 url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/mountain-hikers.jpg") center center;
-                background-size: cover, cover;
-                background-repeat: no-repeat;
-              
-                height: 265px;
-                width: 265px;
+        .adventure_img2{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            position: relative;
+            width:550px;
+            height:265px;
+            overflow: hidden;
         }
-        .night-sky{
-            background:
-                linear-gradient(
-                     rgba(0,0,0,0.25) 0%,
-                     rgba(0,0,0,0.25) 100%
-                ), 
-                 url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/night-sky.jpg") center center;
-                background-size: cover, cover;
-                background-repeat: no-repeat;
-              
-                height: 265px;
-                width: 265px;
-       
+        .adventure_img3{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            position: relative;
+            width:265px;
+            height:265px;
+            overflow: hidden;
         }
+        .adventure_img4{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            position: relative;
+            width:265px;
+            height:265px;
+            overflow: hidden;
+        }
+        .adventure-title{
+            position: absolute;
+            text-decoration: none;
+            font-size: 35px;
+            font-family: 'Merriweather Web Normal';
+            z-index: 1;
+            margin-left: 160px;
+            margin-top:100px;
+            line-height:50px;
+            // 
+    
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            
+            color:#f0e4d1;
+        }
+        .read-more-btn{
+            position: absolute;
+            z-index: 1;
+            margin-top:-250px;
+            border-color: white;
+        }
+        .read-more-btn:hover{
+            border: none;
+        }
+        .read-more a{
+            text-decoration: none;
         }
     }
+        
+
+

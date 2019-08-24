@@ -1,28 +1,34 @@
 <?php get_header(); ?>
-
-    <!-- <h1>My Site</h1> -->
-    <?php if(have_posts() ):
-
-    // echo "hello";
-
-    // echo "<i class='fab fa-facebook-f'></i>";
-
-    //The WordPress Loop: loads post content
-        while(have_posts() ):
+    
+    <?php if(have_posts() ):?>
+<h2>Month: <?php echo get_the_date( 'F Y' ); ?></h2>
+<hr class="archive">
+<div class="journal-sidebar">
+    <div class="journal">
+       <?php while(have_posts() ):
             the_post(); ?>
             
-        <!-- <h2><?php the_title(); ?> </h2> -->
-        <!-- <h3><?php the_author();?></h3>  -->
-        <!-- <h3><?php the_permalink();?></h3>  -->
-        <?php the_content();?>
+            <h2 class="header-journal-page"><?php the_title(); ?> </h2>
+        <?php echo get_the_post_thumbnail(); ?>
+        <p class="journal-content"> <?php echo wp_trim_words( get_the_content(), 53, ' [...]' ); ?> </p>
+        <button type="button"><a class ="read_more" href= "<?php the_permalink();?>">Read More &rarr;</a></button>
+        
+        
     <!-- loop ends -->
         <?php endwhile;?>
-
+        </div>
+        
         <?php the_posts_navigation();?>
 
 <?php else : ?>
             <p> No Posts found</p>
  <?php endif;?>
+ <div class="sidebar">
+    
+ <?php dynamic_sidebar('sidebar-1');?>
+ 
+ </div>
+ </div>
 
 
 

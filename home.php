@@ -11,8 +11,6 @@
             
         <h2 class="header-journal-page"><?php the_title(); ?> </h2>
         
-        <h3></h3> 
-        <!-- <?php the_content();?>  -->
         <?php echo get_the_post_thumbnail(); ?>
        <p class="journal-content"> <?php echo wp_trim_words( get_the_content(), 53, ' [...]' ); ?> </p>
         <button type="button"><a class ="read_more" href= "<?php the_permalink();?>">Read More &rarr;</a></button>

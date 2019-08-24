@@ -4,6 +4,7 @@
     flex: 100%;
 .journal{
     flex: 50%;
+    // margin-top:40px;
     .header-journal-page{
         background-color: #248A83;
         width: 500px;
@@ -33,13 +34,20 @@
         padding-left: 20px;
         margin-left: 160px;
     }
-.journal-content{
-    padding-right: 10px;
-    margin-right: 0;
-}
-.journal-line{
-    display: inline;
-}
+    p{
+        margin-right: -320px;
+        margin-top: 0px;
+    }
+    .journal-content{
+        padding-right: 10px;
+        margin-right: 0;
+    }
+    .journal-line{
+        display: inline;
+    }
+    .content-posts{
+        margin-right:0;
+    }
 }
 
 .sidebar{
@@ -67,6 +75,10 @@
         // padding-left:5px;
         text-decoration: none;
         color:#248A83;
+    }
+    .widget_archive a{
+        margin-left:50px;
+        font-family: 'Merriweather Web Normal';
     }
     
         .biz-hours-class{
@@ -110,4 +122,10 @@ h4{
     padding-top: 10px;
     padding-left: 20px;
     margin-left: 160px;
+}
+hr.archive{
+    border-top: 0.1px solid #e1e1e1;
+    width:760px;
+    // color:red;
+    margin: 20px 0 50px 160px;
 }

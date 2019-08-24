@@ -304,11 +304,16 @@ button:hover, .read_more:hover {
       padding-top: 10px;
       padding-left: 20px;
       margin-left: 160px; }
+    .journal-sidebar .journal p {
+      margin-right: -320px;
+      margin-top: 0px; }
     .journal-sidebar .journal .journal-content {
       padding-right: 10px;
       margin-right: 0; }
     .journal-sidebar .journal .journal-line {
       display: inline; }
+    .journal-sidebar .journal .content-posts {
+      margin-right: 0; }
   .journal-sidebar .sidebar {
     border-left: 1px solid #e1e1e1;
     margin-left: 60px;
@@ -328,6 +333,9 @@ button:hover, .read_more:hover {
     .journal-sidebar .sidebar a {
       text-decoration: none;
       color: #248A83; }
+    .journal-sidebar .sidebar .widget_archive a {
+      margin-left: 50px;
+      font-family: 'Merriweather Web Normal'; }
     .journal-sidebar .sidebar .biz-hours-class h2.widget-title {
       display: none; }
 
@@ -359,6 +367,11 @@ h4 {
   padding-top: 10px;
   padding-left: 20px;
   margin-left: 160px; }
+
+hr.archive {
+  border-top: 0.1px solid #e1e1e1;
+  width: 760px;
+  margin: 20px 0 50px 160px; }
 
 .banner {
   background: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/logos/inhabitent-logo-full.svg") center, -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.25))), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/home-hero.jpg") top center;
@@ -505,52 +518,75 @@ h4 {
   padding-bottom: 50px;
   color: #2f1339; }
 
-.adventure-container .adventure-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%; }
-  .adventure-container .adventure-image .canoe-girl {
-    -webkit-box-flex: 40%;
-        -ms-flex: 40%;
-            flex: 40%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/canoe-girl.jpg") center center;
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/canoe-girl.jpg") center center;
-    background-size: cover, cover;
-    background-repeat: no-repeat;
-    height: 550px;
+.adventure-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  margin-left: 160px; }
+  .adventure-container img {
+    margin-left: 0;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  .adventure-container .adventure_img1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
     width: 550px;
-    margin-left: 160px; }
-  .adventure-container .adventure-image .beach-fire {
-    -webkit-box-flex: 40%;
-        -ms-flex: 40%;
-            flex: 40%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/beach-bonfire.jpg") center center;
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/beach-bonfire.jpg") center center;
-    background-size: cover, cover;
-    background-repeat: no-repeat;
+    height: 550px;
+    overflow: hidden; }
+  .adventure-container .adventure_img2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    width: 550px;
     height: 265px;
-    width: 550px; }
-  .adventure-container .adventure-image .mountain-hiker {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/mountain-hikers.jpg") center center;
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/mountain-hikers.jpg") center center;
-    background-size: cover, cover;
-    background-repeat: no-repeat;
+    overflow: hidden; }
+  .adventure-container .adventure_img3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    width: 265px;
     height: 265px;
-    width: 265px; }
-  .adventure-container .adventure-image .night-sky {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/night-sky.jpg") center center;
-    background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/adventure-photos/night-sky.jpg") center center;
-    background-size: cover, cover;
-    background-repeat: no-repeat;
+    overflow: hidden; }
+  .adventure-container .adventure_img4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    width: 265px;
     height: 265px;
-    width: 265px; }
+    overflow: hidden; }
+  .adventure-container .adventure-title {
+    position: absolute;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Merriweather Web Normal';
+    z-index: 1;
+    margin-left: 160px;
+    margin-top: 100px;
+    line-height: 50px; }
+  .adventure-container a {
+    text-decoration: none;
+    color: white; }
+  .adventure-container a:hover {
+    color: #f0e4d1; }
+  .adventure-container .read-more-btn {
+    position: absolute;
+    z-index: 1;
+    margin-top: -250px;
+    border-color: white; }
+  .adventure-container .read-more-btn:hover {
+    border: none; }
+  .adventure-container .read-more a {
+    text-decoration: none; }
 
 .about-hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/about-hero-min.jpg") center center;

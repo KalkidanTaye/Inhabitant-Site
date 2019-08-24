@@ -96,27 +96,36 @@ while($blogs->have_posts()) :
 ?>
 </div>
 
+
+<!-- Pulling out the Adventure Posts-->
 <h1 class ="front_header"> Latest Adventures</h1>
 
+
 <div class="adventure-container">
-    <div class="adventure-image">
-        <div class="canoe-girl">
-            <button type="button" class ="read_more adventure-button">Read More</button>
-        </div>
-        <div class="beach-fire">
-            <button type="button" class ="read_more adventure-button">Read More</button>
-        </div>
-        <div class="mountain-hiker">
-            <button type="button" class ="read_more adventure-button">Read More</button>
-        </div>
-        <div class="night-sky">
-            <button type="button" class ="read_more adventure-button">Read More</button>
-        </div>
-    </div>
-</div>
     
-        
+<?php 
 
+//Custom WP Loop to Display Custom Posts
 
+$args1 =array(
+    'post_type' => 'adventures',
+    'numberposts' => -1,
+    'order' => 'DSC'
+);
 
+// print_r(get_post($args)); 
+$i = 1;
+$posts = (get_posts($args1));
+foreach($posts as $post):
+    setup_postdata($post);?>
+   <a href= "<?php the_permalink();?>"> <h5 class="adventure-title"><?php the_title();?> </h5></a>
+    <div class="adventure_img<?php echo $i; ?>"> <?php the_post_thumbnail();?> </div>
+    <button type="button" class="read-more-btn"><a class="read-more" href= "<?php the_permalink();?>">Read More</a></button>
+<?php
+$i++;
+endforeach;
+?>
+ 
+
+</div>   
     <?php get_footer(); ?>
