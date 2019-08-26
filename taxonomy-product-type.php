@@ -1,4 +1,12 @@
 <?php get_header(); ?>
+<?php foreach($terms as $term) :
+    ?>   
+    <div class="shop-link">
+     <a class ="shop_stuff" href=<?php echo get_term_link($term);?> > <?php echo $term->name;?></a>
+</div>
+<?php
+endforeach;
+?>
 <h1 class ="front_header"><?php echo $term->name;?></h1>
 <p> <?php echo category_description(); ?> </p>
     <?php if(have_posts() ):?>

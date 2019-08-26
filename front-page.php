@@ -99,8 +99,6 @@ while($blogs->have_posts()) :
 
 <!-- Pulling out the Adventure Posts-->
 <h1 class ="front_header"> Latest Adventures</h1>
-
-
 <div class="adventure-container">
     
 <?php 
