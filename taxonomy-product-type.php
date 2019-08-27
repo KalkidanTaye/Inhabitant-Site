@@ -1,17 +1,14 @@
 <?php get_header(); ?>
-<?php foreach($terms as $term) :
-    ?>   
-    <div class="shop-link">
-     <a class ="shop_stuff" href=<?php echo get_term_link($term);?> > <?php echo $term->name;?></a>
-</div>
-<?php
-endforeach;
-?>
-<h1 class ="front_header"><?php echo $term->name;?></h1>
-<p> <?php echo category_description(); ?> </p>
+
+
+<div class="taxonomy-header">
+<!-- <h2 class ="front_header"><?php echo get_cat_name(4);?></h2> -->
+<?php echo category_description(); ?> 
+   <hr class="shop-line">
+<!-- <h2 class ="front_header"><?php echo $term->name;?></h2> -->
     <?php if(have_posts() ):?>
 
-
+</div>
     
 <div class="shop_container">             
 <?php
@@ -20,12 +17,13 @@ endforeach;
         while(have_posts() ):
             the_post(); ?>
         <div class="shop_images"> 
+        
         <a class= "journal-link" href= "<?php the_permalink();?>">
         <?php echo get_the_post_thumbnail();?>
         </a>
         <div class="price-title">
      <?php the_title(); echo ' .........'?> 
-      <!-- <hr class="price"> -->
+  
         <?php echo '$' . get_field('price'); ?>
      
     </div>

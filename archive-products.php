@@ -7,9 +7,9 @@ $terms = get_terms(array(
 'taxonomy' => 'product-type',
 'hide-empty' => 0
 ));
-// print_r($terms[0]);
-
-foreach($terms as $term) :
+// print_r($terms[0]);?>
+<div class="shop-link-container">
+<?php foreach($terms as $term) :
     ?>   
     <div class="shop-link">
      <a class ="shop_stuff" href=<?php echo get_term_link($term);?> > <?php echo $term->name;?></a>
@@ -17,6 +17,7 @@ foreach($terms as $term) :
 <?php
 endforeach;
 ?>
+</div>
 <hr class="shop-line">
 
 <!-- <div class="product-container">

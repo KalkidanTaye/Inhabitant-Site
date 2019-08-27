@@ -10,7 +10,7 @@
 
         while(have_posts() ):
             the_post(); ?>
-       
+      
        <?php the_permalink();?>">
         <?php echo get_the_post_thumbnail();?>
        

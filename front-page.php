@@ -32,6 +32,7 @@
 </div>
 <?php
 // Get catagory names and links for product
+
 $terms = get_terms(array(
 'taxonomy' => 'product-type',
 'hide-empty' => 0
@@ -45,11 +46,13 @@ $args =array(
 );
 
 // print_r($terms[0]);
+$i = 1;
 foreach($terms as $term) :
     // echo $term->name; // dont forget to uncomment?>
     <!-- // echo get_term_link($term); // dont forget to uncomment -->
-    <button id="shop_stuff" class="shop_button" type="button"><a class ="read_more_shop" href= "<?php echo get_term_link($term);?>"> <?php echo $term->name; ?> Stuff</a></button>
+    <button id="shop_stuff" class="shop_button<?php echo $i ?>" type="button"><a class ="read_more_shop" href= "<?php echo get_term_link($term);?>"> <?php echo $term->name; ?> Stuff</a></button>
   <?php
+  $i++;
 endforeach;
 
 
@@ -87,6 +90,7 @@ while($blogs->have_posts()) :
 while($blogs->have_posts()) :
     $blogs->the_post();?>
   <div class="title-container">
+  <p class="date"><?php echo get_the_date( 'd M Y' ); ?></p>
   <a class= "journal-link" href= "<?php the_permalink();?>">
   <?php echo '<h5 class"journal-title">', the_title() , '</h5>';?></a>
 
@@ -116,14 +120,17 @@ $i = 1;
 $posts = (get_posts($args1));
 foreach($posts as $post):
     setup_postdata($post);?>
-   <a href= "<?php the_permalink();?>"> <h5 class="adventure-title"><?php the_title();?> </h5></a>
+     
     <div class="adventure_img<?php echo $i; ?>"> <?php the_post_thumbnail();?> </div>
-    <button type="button" class="read-more-btn"><a class="read-more" href= "<?php the_permalink();?>">Read More</a></button>
+   
+    <div class="img-title-container">
+          <h5 class="adventure-title<?php echo $i; ?>"><a href= "<?php the_permalink();?>"><?php the_title();?> </a></h5>
+          <button type="button" class="read-more-btn adventure-btn<?php echo $i; ?>"><a class="read-more" href= "<?php the_permalink();?>">Read More</a></button>
+    </div>
 <?php
 $i++;
 endforeach;
 ?>
  
-
 </div>   
     <?php get_footer(); ?>

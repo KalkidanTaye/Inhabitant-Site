@@ -1,0 +1,30 @@
+.pagenot-found-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 100%;
+    
+    .pagenot-found-inner{
+        flex:50%;
+    }
+    .sidebar{
+        flex:20%;
+    }
+    p{
+        margin-right:0px;
+        padding-right:0px;
+    }
+    .journal-title{
+        margin-left:160px;
+        padding-bottom:13px;
+        font-size:16px;
+        font-family: 'Merriweather Web Normal';
+        color:#248A83;
+    }
+    a{
+        text-decoration:none;
+       
+    }
+    select{
+        margin-left:160px;
+    }
+}

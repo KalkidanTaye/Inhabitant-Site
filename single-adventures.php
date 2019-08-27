@@ -6,10 +6,10 @@
     <!-- //The WordPress Loop: loads post content -->
      <?php   while(have_posts() ):
             the_post(); ?>
-        <?php echo get_the_post_thumbnail();?>
-        <h2 class ="orange-title"><?php the_title(); ?>
-        
-        <p><?php the_content();?></p>
+       <div class="adventures-big-image"> <?php echo get_the_post_thumbnail();?></div>
+        <h2 class ="the-adventure-title"><?php the_title(); ?>
+        <h3 class="adventure-author">By <?php the_author(); ?></h3>
+        <?php the_content();?>
         <button class ="single-button" type="button"><i class="fab fa-facebook-f"></i>Like</button>
         <button class ="single-button" type="button"><i class="fab fa-twitter"></i>Tweet</button>
         <button class ="single-button" type="button"><i class="fab fa-pinterest-p"></i>Pin</button>

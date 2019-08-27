@@ -13,7 +13,12 @@
              <li><i class="fab fa-google-plus-square"></i></li>
          </ul>
          
-         
+         <h2 class="business">Business Hours</h2>
+        <ul class="business-hours">
+             <li><p>Monday-Friday: 9am to 5pm</p></li>
+             <li><p>Saturday: 10am to 2pm</p></li>
+             <li><p>Sunday: Closed</p></li>
+        </ul>
     </div>
     <div class="copyright">
              <p>Copyright &copy; 2019 Inhabitent</p>

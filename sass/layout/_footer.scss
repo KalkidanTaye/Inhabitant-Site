@@ -3,8 +3,8 @@
         background-repeat: repeat;
         height: 350px;
         margin-top: 50px;
-        .footer-content{
 
+        .footer-content{
             background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/logos/inhabitent-logo-text.svg");
             background-position-x: 1000px;
             background-position-y: 60px;
@@ -13,32 +13,67 @@
             height: 300px;
 
             .contact-info{
-            color: white;
-            margin-left: 160px;
-            margin-bottom: 20px;
-            p{
-                font-size: 16px;
                 color: white;
-                margin-left: -300px;
-                margin-top: -20px;
+                margin-left: 160px;
+                margin-bottom: 20px;
+                p{
+                    font-size: 16px;
+                    color: white;
+                    margin-left: -300px;
+                    margin-top: -43px;
+                    }
+                li{
+                margin-bottom: 20px;
                 }
-            li{
-            margin-bottom: 20px;
-            }
             }
             .social-media{
-            color: white;
-            margin-left: 160px;
+                color: white;
+                margin-left: 160px;
 
             ul{
-            list-style-type: none;
+                list-style-type: none;
             }
             li{
-            float: left;
-            margin-right: 15px;
+                float: left;
+                margin-right: 15px;
             
+                }
             }
+            .business-hours{
+                color: white;
+                margin-left: 160px;
+                margin-bottom: 20px;
+                p{
+                    font-size: 16px;
+                    color: white;
+                    margin-left: 0px;
+                    margin-top: -43px;
+                    padding-bottom:10px;
+                    }
+                li{
+                margin-bottom: 20px;
+                }
+                
             }
+                .business{
+                    padding-top: -100px;
+                    padding-bottom:40px;
+                    margin-top:-195px;
+                    margin-left: 480px;
+                    color: #d99054;
+                    font-size: 20px;
+                    text-align: left;
+                 }
+            
+            h2{
+            padding-top: 0px;
+            margin-left: 200px;
+            color: #d99054;
+            font-size: 20px;
+            text-align: left;
+           }
+        }
+        .footer-content{
             h2{
             padding-top: 60px;
             margin-left: 160px;
@@ -46,15 +81,15 @@
             font-size: 20px;
             text-align: left;
            }
-
         }
-        .copyright{
+         .copyright{
             p{
                 color: white;
                 text-align: center;
                 text-transform: uppercase;
                 font-family: 'Novecento Sans Web Normal';
-   }
+                margin-left:90px;
+            }
         }
         
     }
