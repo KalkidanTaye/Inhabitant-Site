@@ -19,28 +19,37 @@
             }
            
            }
-           .fixed-header{
-            z-index:10;
-            position:fixed;
+
+
+
+.fixed-header{
+            .home-nav-white{
+                    visibility:hidden;
+            }
+                z-index:20;
+                position:fixed;
             .nav-container{
-            height: 50px;
-            width: 1440px;
-            background-color: white;
-            background: rgba(255, 255, 255, 0.8);
-            border: 0.1px solid #e1e1e1;
+                height: 50px;
+                width: 1440px;
+                background-color: white;
+                background: rgba(255, 255, 255, 0.8);
+                border: 0.1px solid #e1e1e1;
             
-            .home-nav{
-                background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/logos/inhabitent-logo-text-dark.svg");
+            .home-nav1 {
+            visibility: visible;
+                background-image: url("../../../../Inhabitant/wp-content/themes/Inhabitant/assets/images/logos/inhabitent-logo-tent.svg");
+                background-repeat: no-repeat;
                 height:33px;
                 width: auto;
                 position: absolute;
                 z-index: 10;
+                
             }
             
             .menu-main-menu-container{
                 position:fixed;
             ul a{
-                z-index:10;
+                z-index:20;
                 color:#248A83;
                 text-decoration: none;
                 font-size:16px;
@@ -56,11 +65,35 @@
     }
 }
 
-        .home-nav{
+
+        
+
+
+
+        .home-nav-white{
             height:33px;
             width: auto;
             position: absolute;
             z-index: 10;
         }
-    
+        .home-nav{
+             height:33px;
+            width: auto;
+            position: absolute;
+            z-index: 10;
+        }
+        .home-nav1{
+            height:33px;
+           width: auto;
+           position: absolute;
+           z-index: 10;
+       }
+        // .nav-container{
+        //     .home-nav1{
+        //         // visibility: hidden;
+        //         width:0px;
+        //         height:0px;
+        //    }
+        // }
+        
     

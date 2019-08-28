@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div class ="banner"></div>
 <h1 class ="front_header"> Shop Stuff</h1>
 <div class="shop_stuff_container">
