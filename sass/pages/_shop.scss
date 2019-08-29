@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
   }
+  
 .shop_container{
     display: flex;
     flex-wrap: wrap;
@@ -19,13 +20,11 @@
         margin-right: 30px;
         margin-top: 30px;
         
-        
         img{
             width: auto;
             height: 250px;
             margin-left: 0;
-            
-            
+             
         }
         hr.price{
             width:50px;
@@ -76,11 +75,17 @@ margin-bottom: 10px;
  //taxonomy Products Page
 
  .taxonomy-header{
+     h2{
+         padding-top:80px;
+         padding-bottom:20px;
+         text-align:center;
+         margin-left: 0;
+     }
      p{
          text-align:center;
          margin-left:0px;
          width:100%;
-         padding-top:150px;
+       
      }
  }
 
@@ -93,12 +98,13 @@ img {
     flex: 50%;
     width:537px;
     height:auto;
-    margin-top: 50px;
+    margin-top: 80px;
   
 }
 .shop-content{
     flex: 50%;
     margin-left:50px;
+    margin-top: 30px;
     .orange-title{
         
         color: #d99054;

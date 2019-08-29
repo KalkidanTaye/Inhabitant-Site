@@ -20,11 +20,6 @@ endforeach;
 </div>
 <hr class="shop-line">
 
-<!-- <div class="product-container">
-    <div class= "products">
-        <div></div>
-    </div>
-</div> -->
 
     <?php if(have_posts() ):?>
 

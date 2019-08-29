@@ -2,7 +2,7 @@
 
 
 <div class="taxonomy-header">
-<!-- <h2 class ="front_header"><?php echo get_cat_name(4);?></h2> -->
+<h2 class ="front_header"><?php echo single_cat_title();?></h2>
 <?php echo category_description(); ?> 
    <hr class="shop-line">
 <!-- <h2 class ="front_header"><?php echo $term->name;?></h2> -->

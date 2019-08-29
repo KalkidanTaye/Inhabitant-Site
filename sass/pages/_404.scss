@@ -5,9 +5,11 @@
     
     .pagenot-found-inner{
         flex:50%;
+        margin-top:40px;
     }
     .sidebar{
         flex:20%;
+        margin-top:40px;
     }
     p{
         margin-right:0px;
@@ -26,5 +28,17 @@
     }
     select{
         margin-left:160px;
+    }
+    .header-search{
+        margin-top:40px;
+        margin-left: 160px;
+        label{
+            font-family: 'Merriweather Web Normal';
+            text-transform: capitalize;
+        }
+        form{
+            position:relative;
+
+        }
     }
 }
