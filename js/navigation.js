@@ -27,7 +27,6 @@ jQuery(document).ready(function(){
 //Sticky Navigation
 jQuery(window).scroll(function(){
   if ($(window).scrollTop() >= 710) {
-    // $('nav-container').removeClass('home-nav');
       $('nav').addClass('fixed-header');
       
       
