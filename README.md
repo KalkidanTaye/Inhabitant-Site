@@ -5,7 +5,7 @@ Inhabitent is a camping gear site developed  with WordPress.
 ## Description
 
 Inhabitent website gives information on camping. It has a shopping section where 
-camping tools and a blog page where necessary information can be found.
+camping tools and a blog page and necessary information can be found.
 
 ## Technology Used
 
@@ -42,12 +42,6 @@ I have learned how to
 - create plugins,
 - and add forms and download plugins.
 
-## Usage
 
-It can be used for getting information on how to camp.
-
-##Contribution
-
-Any contribution to this project is appreciated.
 
  
